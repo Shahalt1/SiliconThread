@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -75,6 +76,15 @@ public class MainActivity extends Activity {
         cartStore.removeListener(cartListener);
         wishlistStore.removeListener(wishListener);
         super.onDestroy();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        if (intent.hasExtra(EXTRA_OPEN_TAB)) {
+            selectTab(intent.getIntExtra(EXTRA_OPEN_TAB, TAB_HOME));
+        }
     }
 
     @Override

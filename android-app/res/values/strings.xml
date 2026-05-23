@@ -40,6 +40,18 @@
     <string name="cart_total">Total</string>
     <string name="cart_free_ship">FREE</string>
 
+    <string name="title_order">Order Confirmed</string>
+    <string name="order_success">Order Placed!</string>
+    <string name="order_subtitle">Your rig is on its way.</string>
+    <string name="order_number">Order #</string>
+    <string name="order_items">Order Items</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="order_eta">Estimated delivery</string>
+    <string name="order_payment">Payment</string>
+    <string name="order_address">Shipping to</string>
+    <string name="action_continue_shopping">Continue Shopping</string>
+    <string name="action_view_orders">View All Orders</string>
+
     <string name="benchmarks">Benchmarks</string>
     <string name="specifications">Specifications</string>
     <string name="description">Description</string>

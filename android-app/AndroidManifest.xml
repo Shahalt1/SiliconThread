@@ -47,5 +47,11 @@
             android:label="@string/title_search"
             android:theme="@style/AppTheme" />
 
+        <activity
+            android:name=".OrderConfirmationActivity"
+            android:exported="false"
+            android:label="@string/title_order"
+            android:theme="@style/AppTheme" />
+
     </application>
 </manifest>

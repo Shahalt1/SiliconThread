@@ -1,6 +1,7 @@
 package com.siliconthread.marketplace.ui;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +10,8 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.siliconthread.marketplace.OrderConfirmationActivity;
 import com.siliconthread.marketplace.R;
 import com.siliconthread.marketplace.data.CartStore;
 import com.siliconthread.marketplace.data.Product;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Random;
 
 public class CartFragment extends Fragment {
 
@@ -83,8 +85,24 @@ public class CartFragment extends Fragment {
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View v) {
                 if (store.isEmpty()) return;
+                Map<String, Integer> snap = store.snapshot();
+                String[] ids = new String[snap.size()];
+                int[] qtys = new int[snap.size()];
+                int i = 0;
+                for (Map.Entry<String, Integer> e : snap.entrySet()) {
+                    ids[i] = e.getKey();
+                    qtys[i] = e.getValue();
+                    i++;
+                }
+                double subtotal = store.subtotal(ProductRepository.get(getActivity()));
+                String orderNumber = "ST-" + (10000 + new Random().nextInt(89999));
+                Intent intent = new Intent(getActivity(), OrderConfirmationActivity.class);
+                intent.putExtra(OrderConfirmationActivity.EXTRA_IDS, ids);
+                intent.putExtra(OrderConfirmationActivity.EXTRA_QTYS, qtys);
+                intent.putExtra(OrderConfirmationActivity.EXTRA_SUBTOTAL, subtotal);
+                intent.putExtra(OrderConfirmationActivity.EXTRA_ORDER_NUMBER, orderNumber);
+                startActivity(intent);
                 store.clear();
-                Toast.makeText(getActivity(), "Order placed — thanks for testing!", Toast.LENGTH_SHORT).show();
             }
         });
         return root;
