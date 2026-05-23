@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:contentDescription="categories-screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse Categories"
+        android:textColor="#FFE6F0FF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap a category to dive in."
+        android:textColor="#FFA9B4D6"
+        android:textSize="13sp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="12dp"/>
+
+    <GridView
+        android:id="@+id/category_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="12dp"
+        android:verticalSpacing="12dp"
+        android:padding="12dp"
+        android:stretchMode="columnWidth"
+        android:contentDescription="category-grid"
+        android:scrollbars="none"/>
+</LinearLayout>

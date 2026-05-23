@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_deep">#FF05060B</color>
+    <color name="bg_panel">#FF0C1020</color>
+    <color name="bg_card">#FF11162A</color>
+    <color name="bg_card_alt">#FF161D38</color>
+    <color name="bg_overlay">#CC000000</color>
+
+    <color name="stroke_neon">#FF22D3EE</color>
+    <color name="stroke_dim">#FF1F2540</color>
+
+    <color name="accent_cyan">#FF22D3EE</color>
+    <color name="accent_magenta">#FFF000FF</color>
+    <color name="accent_pink">#FFFF3DAA</color>
+    <color name="accent_violet">#FF9B5DE5</color>
+    <color name="accent_lime">#FFB6FF38</color>
+    <color name="accent_amber">#FFFFB020</color>
+
+    <color name="text_primary">#FFE6F0FF</color>
+    <color name="text_secondary">#FFA9B4D6</color>
+    <color name="text_tertiary">#FF6E789B</color>
+    <color name="text_muted">#FF4B5377</color>
+
+    <color name="status_in_stock">#FF38E89A</color>
+    <color name="status_out">#FFFF4D6D</color>
+    <color name="deal">#FFFFB020</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SiliconThread</string>
+    <string name="tagline">Forge Your Rig.</string>
+    <string name="title_listing">Catalog</string>
+    <string name="title_detail">Product</string>
+    <string name="title_search">Search</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_categories">Browse</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_wishlist">Wishlist</string>
+    <string name="tab_cart">Cart</string>
+    <string name="tab_profile">Profile</string>
+
+    <string name="action_add_to_cart">Add to Cart</string>
+    <string name="action_buy_now">Buy Now</string>
+    <string name="action_wishlist">Wishlist</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_checkout">Checkout</string>
+    <string name="action_search_hint">Search GPUs, CPUs, AI accelerators…</string>
+
+    <string name="section_featured">Featured GPUs</string>
+    <string name="section_trending">Trending CPUs</string>
+    <string name="section_ai">AI Accelerators</string>
+    <string name="section_deals">Gaming Deals</string>
+    <string name="section_recommended">Recommended</string>
+
+    <string name="empty_wishlist">Your wishlist is empty.</string>
+    <string name="empty_cart">Your cart is empty.</string>
+    <string name="empty_search">No products match your search.</string>
+
+    <string name="profile_name">Guest Tester</string>
+    <string name="profile_email">tester@siliconthread.dev</string>
+    <string name="profile_tier">★ Threadbearer • Tier 3</string>
+
+    <string name="cart_subtotal">Subtotal</string>
+    <string name="cart_shipping">Shipping</string>
+    <string name="cart_tax">Estimated tax</string>
+    <string name="cart_total">Total</string>
+    <string name="cart_free_ship">FREE</string>
+
+    <string name="benchmarks">Benchmarks</string>
+    <string name="specifications">Specifications</string>
+    <string name="description">Description</string>
+    <string name="in_stock">In Stock</string>
+    <string name="out_of_stock">Out of Stock</string>
+</resources>
