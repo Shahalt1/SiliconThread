@@ -29,3 +29,5 @@ android-app/build/
 
 # macOS
 .DS_Store
+
+.claude/
